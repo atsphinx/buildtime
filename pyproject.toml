@@ -11,6 +11,9 @@ dependencies = [
 ]
 dynamic = ["version"]
 
+[tool.setuptools.dynamic]
+version = {attr = "atsphinx.buildtime.__version__"}
+
 [tool.setuptools.package-dir]
 atsphinx = "atsphinx"
 
